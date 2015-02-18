@@ -1,3 +1,23 @@
+### Yelp
+
+This is a Yelp search app using the [Yelp API](http://developer.rottentomatoes.com/docs/read/JSON).
+
+Time Spent:  10 hours
+
+### Features
+#### Required
+ - [X] Search results page
+    - [X] Table rows should be dynamic height according to the content height
+    - [X]Custom cells should have the proper Auto Layout constraints
+    - [?]Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does). -- it doesn't work though :(
+
+ - [X] Filter page. Unfortunately, not all the filters are supported in the Yelp API.
+    - [X] The filters you should actually have are: category, sort (best match, distance, highest rated), radius (meters), deals (on/off).
+    - [X] The filters table should be organized into sections as in the mock.
+    - [X]Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
+
+
+
 ### Basic Yelp client
 
 This is a headless example of how to implement an OAuth 1.0a Yelp API client. The Yelp API provides an application token that allows applications to make unauthenticated requests to their search API.
