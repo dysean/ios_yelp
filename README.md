@@ -6,15 +6,15 @@ Time Spent:  10 hours
 
 ### Features
 #### Required
- - [X] Search results page
-    [X] Table rows should be dynamic height according to the content height
-    [X]Custom cells should have the proper Auto Layout constraints
-    [?]Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does). -- it doesn't work though :(
+##### Search results page
+ - [X] Table rows should be dynamic height according to the content height
+ - [X] Custom cells should have the proper Auto Layout constraints
+ - [?] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does). -- it doesn't work though :(
 
- - [X] Filter page. Unfortunately, not all the filters are supported in the Yelp
-    - [X] The filters you should actually have are: category, sort (best match, distance, highest rated), radius (meters), deals (on/off).
-    - [X] The filters table should be organized into sections as in the mock.
-    - [X]Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
+##### Filter page. Unfortunately, not all the filters are supported in the Yelp
+- [X] The filters you should actually have are: category, sort (best match, distance, highest rated), radius (meters), deals (on/off).
+- [X] The filters table should be organized into sections as in the mock.
+- [X] Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
 
 
 
@@ -31,7 +31,7 @@ This is a headless example of how to implement an OAuth 1.0a Yelp API client. Th
 
 ```
 self.client = [[YelpClient alloc] initWithConsumerKey:kYelpConsumerKey consumerSecret:kYelpConsumerSecret accessToken:kYelpToken accessSecret:kYelpTokenSecret];
-        
+
 [self.client searchWithTerm:@"Thai" success:^(AFHTTPRequestOperation *operation, id response) {
    NSLog(@"response: %@", response);
 } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
